@@ -1,22 +1,13 @@
 module.exports = (mongoose) => {
   const schema = mongoose.Schema(
     {
-      nama: {
-        type: String,
-        required: true,
-      },
       email: {
         type: String,
         unique: true,
         required: true,
       },
-      alamat: {
-        type: String,
-        required: true,
-      },
       password: {
         type: String,
-        unique: true,
         required: true,
       },
     },
@@ -32,5 +23,5 @@ module.exports = (mongoose) => {
     return object;
   });
 
-  return mongoose.model("dataadmin", schema);
+  return mongoose.model("loginadmin", schema);
 };

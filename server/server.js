@@ -26,8 +26,9 @@ db.mongoose
     process.exit();
   });
 
-// memanggil route admin
+// memanggil route
 require("./app/routes/admin.route")(app);
+require("./app/routes/auth.route")(app);
 
 const port = process.env.PORT || 8000;
 app.listen(port, () => console.log(`server started on port ${port}`));

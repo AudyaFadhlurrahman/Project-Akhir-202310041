@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  const admin = require("../controllers/admin.controller");
+  const admin = require("../controllers/register.controller");
   const r = require("express").Router();
 
   r.get("/register", admin.findAll);
